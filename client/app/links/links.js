@@ -5,10 +5,10 @@ angular.module('shortly.links', [])
   $scope.data = {};
 
   $scope.getAll = function() {
-    console.log('inside links');
+    // console.log('inside links');
     Links.getAll($scope.data)
     .then(function(links) {
-      console.log('Links in controller:', links);
+      // console.log('Links in controller:', links);
       $scope.data.links = links;
     });
   };
@@ -16,7 +16,7 @@ angular.module('shortly.links', [])
   $scope.addOne = function() {
     Links.addOne($scope.data)
     .then(function() {
-      console.log('Addone in controller!');
+      // console.log('Addone in controller!');
     });
   };
 

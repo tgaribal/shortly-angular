@@ -18,7 +18,7 @@ angular.module('shortly.services', [])
       url: '/api/links',
       data: link
     }).then(function(response) {
-      console.log('Addone response data:', response.data, 'response status:', response.status);
+      // console.log('Addone response data:', response.data, 'response status:', response.status);
       return response;
     });
   };
