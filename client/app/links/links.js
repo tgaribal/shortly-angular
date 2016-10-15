@@ -19,6 +19,8 @@ angular.module('shortly.links', [])
     });
   };
 
+  // $scope.
+
   $scope.getAll();
   // $location.path()
 });
