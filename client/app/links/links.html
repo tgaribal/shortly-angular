@@ -1,6 +1,7 @@
 <div id='container'>
-  <div ng-controller="LinksController" ng-init="getAll()"></div>
+  <div ng-controller="LinksController"></div>
+
   <ul>
-    <li ng-repeat="link in links"> {{ link }} </li>
+    <li ng-repeat="link in data"> {{ link }} </li>
   </ul>
 </div>
