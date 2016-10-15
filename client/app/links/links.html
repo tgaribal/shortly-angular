@@ -5,10 +5,11 @@
       <div class="link" ng-repeat="link in data.links"> 
       <img src ='../assets/redirect_icon.png' />
         <div class="info"> 
-          <div class="visits"><span class="count">{{ link.visits}}</span>Visits</div>
-          <div class="title">{{ link.url}} </div>
-
+          <div class="visits"><span class="count">{{ link.visits }}</span>Visits</div>
+          <div class="title">{{ link.title}} </div>
           <div class="original">{{ link.url}}</div>
+          <a href={{link.code}} target="_blank">{{ link.baseUrl + '/'+ link.code}} </a>
+
         </div>
       </div>
     </li>
