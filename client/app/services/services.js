@@ -43,6 +43,7 @@ angular.module('shortly.services', [])
     })
     .then(function (resp) {
       return resp.data.token;
+      
     });
   };
 
